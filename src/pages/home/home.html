@@ -20,7 +20,7 @@
          <div>
            <button ion-button  class="btn" style="background-color: black;color: white; padding:10px;padding-left:100px;padding-right: 90px;padding-top:15px;padding-bottom: 15px ;margin-top: 20px;" (click)="login()" (mouseover)="loginShowerror()" (mouseleave)="loginDontshowerror()">LOG ME IN</button>
          </div>
-         <a href="#" class="forgot" ><h6  (click)="navigateOtp()">Forgot Password???</h6></a>
+         <a href="#" class="forgot" ><h6  (click)="navigateOtp()" style="text-decoration:none">Forgot Password???</h6></a>
       </div>
       <div *ngIf="selectedButton == 'register'">
         <div style="background-color: aliceblue; border-radius: 6%;margin-bottom: 10px;">
