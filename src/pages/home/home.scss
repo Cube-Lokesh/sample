@@ -1,0 +1,22 @@
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type=text]{
+    border-radius: 6%;
+}
+input[type=password]{
+    border-radius: 6%;
+}
+.btn{
+    border-radius: 8px;
+}
+.errormessage{
+    color:red;
+    font-style: initial;
+}
+.forgot{
+    display: flex;
+    justify-content: right;
+}

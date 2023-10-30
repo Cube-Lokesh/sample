@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title >{{heading}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+      <div class="d-flex flex-row" *ngIf="forgotbutton === 'base'">
+        <ion-row class="ion-align-items-left">
+          <ion-col size="12" class="col-12">
+            <p style="width: 100%;"><b>Enter 10 digits registered mobile numer:</b></p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-align-items-left">
+        <ion-col size="12" class="col-12">
+          <ion-input [(ngModel)]="mobile" type="tel"   placeholder="Mobile Number" required maxlength="10" ></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="12" class="col-12">
+          <button ion-button style="background-color: #ff5b03; width: 100%;" (click)="generateOtp('child')">Generate OTP</button>
+        </ion-col>
+          
+        </ion-row>
+      </div>
+      <div *ngIf="forgotbutton === 'child'">
+        <h1>hihihihihihihihi</h1>
+      </div>
+</ion-content>
